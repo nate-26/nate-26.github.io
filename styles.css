@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'WindowsRegular';
+    src: url(fonts/WindowsRegular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'WindowsRegular', sans-serif;
+}
+
+#MainHeader{
+    text-align: left;
+}
+
+p {
+    padding-left: 5%;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'WindowsRegular', sans-serif;
+}
+
+.nav-button:hover {
+    color: darkblue;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}

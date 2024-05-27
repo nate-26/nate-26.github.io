@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Homepage</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <style>
-            #MainHeader{
-                text-align: center;
-            }
-        </style>
-        <h1 id="MainHeader">Nate's Site</h1>
-        <p style="padding-left: 5%;">Work in progress!</p>
+        <header>
+            <h1 id="MainHeader">Nate</h1>
+            <nav>
+                <button class="nav-button" data-target="home">Home</button>
+                <button class="nav-button" data-target="blog">Blog</button>
+                <button class="nav-button" data-target="about">About Me</button>
+                <button class="nav-button" data-target="projects">Projects</button>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Home</h2>
+                <p>
+                    Welcome to my website!
+                </p>
+            </section>
+            <section id="blog">
+                <h2>Blog</h2>
+                <p>This is the Blog section!</p>
+            </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>This is  the about me section!</p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>This is the projects section!</p>
+            </section>
+        </main>
+        <script src="scripts.js"></script>
     </body>
 </html>
