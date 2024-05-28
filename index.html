@@ -3,12 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Homepage</title>
+        <title>Nate</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
-            <h1 id="MainHeader">Nate</h1>
+            <div class="header-content">
+                <img src="images/mainLogo.png" alt="Logo" class="logo">
+                <h1 id="MainHeader">Nate</h1>
+            </div>
             <nav>
                 <button class="nav-button" data-target="home">Home</button>
                 <button class="nav-button" data-target="blog">Blog</button>
@@ -19,9 +22,9 @@
         <main>
             <section id="home">
                 <h2>Home</h2>
-                <p>
-                    Welcome to my website!
-                </p>
+                <p>Welcome to my website! Explore to learn more about me and to check out some of my work!</p>
+                <img src="images/giphy.webp" alt="Image" class="Image">
+                <p><a href="https://giphy.com/gifs/windows-95-13ttxrUcy9ZZHW">via GIPHY</a></p>
             </section>
             <section id="blog">
                 <h2>Blog</h2>
@@ -29,7 +32,27 @@
             </section>
             <section id="about">
                 <h2>About Me</h2>
-                <p>This is  the about me section!</p>
+                <p>I am a Computer Science student at Northern Illinois University. I have an interest in Cyber Security and Full Stack development.</p>
+                <p>I have experience with C++, HTML, PHP, MySQL, as well as a deep understanding of GNU/Linux.</p>
+                <h3>Links</h3>
+                <p>Check out my <button class="link-button" onclick="window.location.href='https://github.com/nate-26'">GitHub</button>!</p>
+                <p>I also make games on <button class="link-button" onclick="window.location.href='https://prairieg0d.itch.io'">itch.io</button>!</p>
+                <h3 id="ClassesHeading">Previous Courses</h3>
+                <p>Throughout my time at NIU I have taken several programming classes:</p>
+                <ul id="aboutMeList">
+                    <li>CSCI 240: Introduction to C++</li>
+                    <li>CSCI 241: Intermediate C++</li>
+                    <li>CSCI 330: UNIX and Networking</li>
+                    <ul><li>Unix and networking fundamentals, PERL, AWK, BASH, etc.</li></ul>
+                    <li>CSCI 340: Data Structures and Algorithms</li>
+                    <ul><li>In depth analysis of containers, iterators, various algorithms, heaps, graphs, etc.</li></ul>
+                    <li>CSCI 466: Databases</li>
+                    <ul><li>ER Diagrams, Relation Schemas, MySQL, HTML, PHP and CSS.</li></ul>
+                </ul>
+                <p>I am currently taking these courses:</p>
+                <ul id="currentlyTakingList">
+                    <li>CSCI 360: Assembler</li>
+                </ul>
             </section>
             <section id="projects">
                 <h2>Projects</h2>
