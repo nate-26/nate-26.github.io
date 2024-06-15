@@ -1,18 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.nav-button');
-    const sections = document.querySelectorAll('section');
-
+    
     buttons.forEach(button => {
         button.addEventListener('click', function () {
             const target = this.getAttribute('data-target');
             
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-
-            document.getElementById(target).classList.add('active');
+            if (target.startsWith('#')) {
+                const section = target.substring(1);
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(section)?.classList.add('active');
+            } else {
+                window.location.href = target;
+            }
         });
     });
 
-    document.getElementById('home').classList.add('active');
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(hash)?.classList.add('active');
+    } else {
+        document.getElementById('home')?.classList.add('active');
+    }
 });
